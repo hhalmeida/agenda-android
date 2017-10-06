@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_formulario">
+
+    <EditText android:hint="Nome"
+        android:id="@+id/formulario_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText android:hint="Endereço"
+        android:id="@+id/formulario_endereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText android:hint="Telefone"
+        android:id="@+id/formulario_telefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText android:hint="Site"
+        android:id="@+id/formulario_site"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RatingBar
+        android:id="@+id/formulario_nota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:max="10"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/formulario_salvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar"/>
+
+</LinearLayout>
